@@ -1,0 +1,20 @@
+{
+  "name": "image-issue-analyzer",
+  "version": "0.1.0",
+  "description": "Paperclip plugin that analyzes issue and comment images and posts a text summary.",
+  "author": {
+    "name": "Melchinger"
+  },
+  "interface": {
+    "displayName": "Image Issue Analyzer",
+    "shortDescription": "Analyzes embedded issue images and comments on them.",
+    "longDescription": "When an issue or comment contains a Markdown image embed, this plugin resolves the asset, stages it in a temporary file, runs Kimi on the image, and writes the result back as a text comment.",
+    "developerName": "Melchinger",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": [
+      "Analyze attached issue screenshots and summarize UI problems."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

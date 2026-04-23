@@ -1,0 +1,20 @@
+{
+  "name": "@melchinger/paperclip-issue-archiver",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Paperclip issue archiver UI for bulk-archiving issues by status and cutoff date.",
+  "author": "Melchinger",
+  "license": "MIT",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker-bootstrap.js",
+    "ui": "./dist/ui/"
+  },
+  "keywords": [
+    "paperclip",
+    "plugin",
+    "issues",
+    "archive",
+    "ui"
+  ]
+}

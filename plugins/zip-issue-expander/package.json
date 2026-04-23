@@ -1,0 +1,28 @@
+{
+  "name": "zip-issue-expander",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Paperclip plugin that expands archive attachments into company-scoped binary paths and comments the local file paths back onto issues.",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker-bootstrap.js",
+    "ui": "./dist/ui/"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "^2026.403.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "prepare": "npm run build",
+    "prepack": "npm run build",
+    "check": "python3 -m py_compile scripts/expand_issue_archive.py"
+  }
+}

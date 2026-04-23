@@ -1,0 +1,30 @@
+{
+  "name": "image-issue-analyzer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Paperclip plugin that analyzes issue and comment images and posts markdown summaries.",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker-bootstrap.js",
+    "ui": "./dist/ui/"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "^2026.403.0"
+  },
+  "files": [
+    "dist",
+    "src",
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "prepare": "npm run build",
+    "prepack": "npm run build",
+    "analyze": "python3 scripts/analyze_issue_image.py",
+    "analyze:serve": "python3 scripts/analyze_issue_image.py --serve",
+    "check": "python3 -m py_compile scripts/analyze_issue_image.py"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "paperclip-issue-archiver",
+  "version": "0.1.0",
+  "description": "Archive Paperclip issues by cutoff date and status.",
+  "author": {
+    "name": "Melchinger",
+    "email": "hello@melchinger.net",
+    "url": "https://md.melchinger.net"
+  },
+  "homepage": "https://md.melchinger.net",
+  "repository": "https://github.com/melchinger/paperclip-issue-archiver",
+  "license": "MIT",
+  "keywords": [
+    "paperclip",
+    "issues",
+    "archive",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Paperclip Issue Archiver",
+    "shortDescription": "Archive old Paperclip issues",
+    "longDescription": "Open a compact archive panel, preview issues older than a cutoff date, and archive every issue matching the selected status.",
+    "developerName": "Melchinger",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://md.melchinger.net",
+    "privacyPolicyURL": "https://md.melchinger.net",
+    "termsOfServiceURL": "https://md.melchinger.net",
+    "defaultPrompt": [
+      "Archive old issues before a chosen date and status"
+    ],
+    "brandColor": "#0f766e",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  }
+}

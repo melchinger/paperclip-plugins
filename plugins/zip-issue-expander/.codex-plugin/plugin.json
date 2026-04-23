@@ -1,0 +1,20 @@
+{
+  "name": "zip-issue-expander",
+  "version": "0.1.0",
+  "description": "Paperclip plugin that expands archive attachments into a stable company binary path and comments local file paths back onto issues.",
+  "author": {
+    "name": "Melchinger"
+  },
+  "interface": {
+    "displayName": "Archive Issue Expander",
+    "shortDescription": "Expands archive attachments and comments local file paths.",
+    "longDescription": "When an issue, comment, or attachment event carries a supported archive file, this plugin expands it under a company-scoped binary directory, writes a manifest, and comments the resulting host paths back onto the issue for later agent use.",
+    "developerName": "Melchinger",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": [
+      "Expand archive attachments into a company binary path and comment the direct local file paths."
+    ],
+    "brandColor": "#0F766E"
+  }
+}
